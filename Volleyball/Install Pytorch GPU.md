@@ -30,15 +30,13 @@ visit [*Offical* *Website*](https://developer.nvidia.com/cuda-downloads)
 
 ## Installation Installer
 
-​	`sudo dpkg -i cuda-repo-ubuntu1404_10.1.105-1_amd64.deb`
+> ​	`sudo dpkg -i cuda-repo-ubuntu1404_10.1.105-1_amd64.deb`
 
 ​	`sudo apt-key adv --fetch-keys http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1404/x86_64/7fa2af80.pub`
 
 ​	`sudo apt-get update`
 
 ​	`sudo apt-get install cuda-8-0`
-
-
 
 ### Download Cudnn
 
