@@ -40,7 +40,7 @@ visit [*Offical* *Website*](https://developer.nvidia.com/cuda-downloads)
 
 
 
-## Download Cudnn
+### Download Cudnn
 
 it also need to visit [*Offical website*](https://developer.nvidia.com/cudnn)
 
@@ -54,7 +54,7 @@ click the link
 
 ![runtime](img/runtime.png)
 
-## Install Cudnn-6
+### Install Cudnn-6
 
 use command:
 
@@ -62,9 +62,11 @@ use command:
 
 ​	sudo apt-get install libcudnn6
 
+## Install Pytorch-GPU
 
+[*offical website*](https://pytorch.org/)
 
+![torch](img/torch.png)
 
-
-
+# Try your Torch
 
