@@ -6,7 +6,7 @@
 
 #### Reward
 
-![](http://latex.codecogs.com/gif.latex?\ R_t = \sum_{i=t}^{T}\gamma^{i-t}r(s_i,a_i))
+![](http://latex.codecogs.com/gif.latex?\R_t = \sum_{i=t}^{T}\gamma^{i-t}r(s_i,a_i))
 
 
 
