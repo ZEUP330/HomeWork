@@ -1,3 +1,5 @@
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+
 # DEEP REINFORCEMENT LEARNING
 
 #### Action and Observation
@@ -56,6 +58,14 @@ PG -> DPG -> DDPG
 $$
 \alpha_t = \mu(s_t|\theta^\mu)
 $$
+
+$$
+The function \mu
+$$
+
+
+
+$\mu$
 
 
 
