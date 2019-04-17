@@ -12,8 +12,6 @@ $$
 R_t = \sum_{i=t}^{T}\gamma^{i-t}r(s_i,a_i)
 $$
 
-
-
 ## DQN (select in Discrete)
 
 ![DQN](IMG/DeepQL.png)
@@ -29,9 +27,15 @@ $$
 ## POLICY GRADIENTS (select in Continuous)
 ![PG](IMG/PG.png)
 
+In here , i need explain the formula:
+$$
+\nabla\theta=\int_S\int_A\rho(s)\pi_{\theta}(a|s)Q^{\pi}(s,a){\rm d}s{\rm d}a
+$$
+
+
 Classic method in Continuous action: **Propability Distribution Function**
 $$
-\alpha_t \approx\pi_\theta(s_t|\theta^\pi) 
+\alpha_t \mbox{~} \pi_\theta(s_t|\theta^\pi)
 $$
 
 ## Actor Critic (PG + Q-Learning)
@@ -40,38 +44,30 @@ $$
 
 ### Actor---->Policy Gradient 
 
-Actor select a suitable action from continuous action which come from Nerual Network by **certain propability**.
+Actor select a suitable action from continuous action which come from Neural Network by **certain propability**.
 
 ### Critic---->Q-Learning
 
-after actor selected a suitable action, critic use **[ s, s_ ]** to compute **[ v, v_ ]** by Nerual Network. then using this formula:
+after actor selected a suitable action, critic use **[ s, s_ ]** to compute **[ v, v_ ]** by Neural Network. then using this formula:
 $$
-td_{error}=r+ \gamma v_{-}-v
+td_{error}=r + \gamma v_{-}-v
 $$
 single update the actor network by [ **td, s, action** ]
 ## Deep Deterministic Policy Gradient
 
 PG -> DPG -> DDPG
 
-### DPG [a new function]:
+### DPG [a new function]
 
 $$
 \alpha_t = \mu(s_t|\theta^\mu)
 $$
 
-$$
-The function \mu
-$$
-
-
-
-$\mu$
-
-
-
-![DDPG](IMG/DDPG.png)
+The Function u is **the most optimal policy**[ combine Q-learning or Gradient Q-learning ],  It is no longer a random strategy that requires sampling.[ PG is random sampling ]
 
 ### DDPG
+
+![DDPG](IMG/DDPG.png)
 
 DDPG is belong to **Actor-Critic**, output is **a specific action**, it isn't the propability of a series of action. it benefit for detect from continuous action. and DDPG successfully **combine DQN and Action-Critic**. Enhance stability and convergence of AC. 
 
@@ -85,7 +81,7 @@ $$
 \nabla_{\theta\mu}J \approx \frac{1}{N}\sum_{i}\nabla_{\alpha}Q(s,\alpha|\theta^{Q})|_{s=s_i,\alpha=\mu(s_i)}\nabla_{\theta^{\mu}\mu}(s|\theta^\mu)|s_i
 $$
 
-**gradient[Q]** is come from **Critic**, it tall Actor How to move and get the more reward. Critic get this value by **s**(<u>the last observation</u>) and **action**(<u>which was compute from nerual network</u>)
+**gradient[Q]** is come from **Critic**, it tall Actor How to move and get the more reward. Critic get this value by **s**(<u>the last observation</u>) and **action**(<u>which was compute from neural network</u>)
 
 **grdient[U]** is from **Actor**, it help actor **fix himself parameter** so that actor will choose this big reward action in next time.
 
@@ -95,14 +91,44 @@ $$
 \gamma_i = r_i+\gamma Q'(s_{i+1}, \mu'(s_{i+1}|\theta^{\mu'})| \theta^{Q'})
 $$
 
-According to **s_,** using Actor select **action**( **Actor_Target** ), [ **Directly output** the action by Nerual NetWork.
+According to **s_,** using Actor select **action**( **Actor_Target** ), [ **Directly output** the action by Neural NetWork.
 
 Update critic by **minimizing the loss**: 
 $$
 L =\frac{1}{N}\sum_{i}(y_i-Q(s_i,\alpha_i|\theta^Q))^2
 $$
 
+#### Outline
 
+##### A certain action policy u : every action from [ Actor ]
+
+$$
+a_t=\mu(s_t)
+$$
+
+##### Policy network : simulate function u with convolution neural network. the name of parameter is  [ Actor ]
+
+$$
+\theta^{\mu}
+$$
+
+##### Behavior policy :  we should focus on Exploration and **Exploit**   [ Actor ]
+
+Exploration: explorate the hidden optimal policy. so we add some random voice in action decision[ actor_eval ].
+
+![voice](IMG/DDPG_VOICE.jpeg)
+
+this policy is Behavior policy. the training mode is Off-policy.
+
+DDPG use [Uhlenbeck-Ornstein random process](https://en.wikipedia.org/wiki/Ornstein%E2%80%93Uhlenbeck_process). 
+
+**This Behavior policy isn't  the optimal policy**. it just **generate** action so that we can get the training data, such as **transitions** and **trajectory** of agent. finally, we can use this data to train policy and get the optimal policy. 
+
+##### Test and Evaluation [ Critic ]
+
+we use **the certain action policy** to test , not behavior policy .[ because the aim of behavior policy is find the other probability optimal policy ]
+
+Q-function:
 
 
 
