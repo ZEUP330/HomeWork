@@ -128,10 +128,62 @@ DDPG use [Uhlenbeck-Ornstein random process](https://en.wikipedia.org/wiki/Ornst
 
 we use **the certain action policy** to test , not behavior policy .[ because the aim of behavior policy is find the other probability optimal policy ]
 
-Q-function:
+Q-function : In the state St , take action (at) under the certain action policy, then get the expect value Rt, explain it by Bellman formula :
+$$
+Q^\mu(s_t,a_t)=E[r(s_t,a_t)+\gamma Q^\mu(s_{t+1},\mu_{t+1})]
+$$
+it is hard to recursion calculate Q, so we use a nerual network to simulate this formula.[Q-Network]
+$$
+\theta^Q
+$$
+this method like DQN;
 
+##### J function measure this policy performance [ performance objective ]
 
+$$
+J_\beta(\mu)=\int _S\rho^\beta(s)Q^\mu(s,\mu(s)){\rm d}s= E_{s \to \rho^\beta}[Q^\mu(s,\mu(s))]
+$$
 
+s is the state，This state is base on agent behavior policy : the distribution function is *ρ^β*
+
+*Q^μ*(*s*,*μ*(*s*)) is the Q-value which are producted by certain policy [ *μ* ] 
+
+Train aim：maximum [ *J_β*(*μ*) ] and minimize [ *Q* ]
+
+the most optimal action policy : maximum J_β(μ):
+$$
+\mu = argmax_\mu J(\mu)
+$$
+![DDPG_code](IMG/DDPG_CODE.jpeg)
+
+#### In the code:DDPG divide into 2 network[policy{actor} and Q{critic}]
+
+$$
+policy-Net\begin{cases}
+eval:\mu(s|\theta^\mu) \\
+\\
+target:\mu'(s|\theta^{\mu'})\\
+\end{cases}
+$$
+
+$$
+Q-Net\begin{cases}
+eval:Q(s|\theta^Q) \\
+\\
+target:Q'(s|\theta^{Q'})\\
+\end{cases}
+$$
+
+each round(min-batch) update eval-net then update target-net using SGA\SGD
+
+update target-net is runing average algorithm:
+$$
+soft-update:\begin{cases}
+\theta^{Q'}=\tau\theta^Q+(1-\tau)\theta^{Q'}\\
+\\
+\theta^{\mu'}=\tau\theta^\mu+(1-\tau)\theta^{\mu'}\\
+\end{cases}
+$$
 
 
 # Classification
