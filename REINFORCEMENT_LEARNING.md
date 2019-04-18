@@ -1,8 +1,8 @@
+
+# DEEP REINFORCEMENT LEARNING
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
-
-# DEEP REINFORCEMENT LEARNING
 
 #### Action and Observation
 
@@ -10,9 +10,7 @@
 
 #### Reward
 
-$$
-R_t = \sum_{i=t}^{T}\gamma^{i-t}r(s_i,a_i)
-$$
+![](IMG/1.gif)
 
 ## DQN (select in Discrete)
 
@@ -30,15 +28,15 @@ $$
 ![PG](IMG/PG.png)
 
 In here , i need explain the formula:
-$$
-\nabla\theta=\int_S\int_A\rho(s)\pi_{\theta}(a|s)Q^{\pi}(s,a){\rm d}s{\rm d}a
-$$
+
+![2](IMG/2.gif)
+
+
 
 
 Classic method in Continuous action: **Propability Distribution Function**
-$$
-\alpha_t \mbox{~} \pi_\theta(s_t|\theta^\pi)
-$$
+
+![](IMG/3.gif)
 
 ## Actor Critic (PG + Q-Learning)
 
@@ -51,9 +49,9 @@ Actor select a suitable action from continuous action which come from Neural Net
 ### Critic---->Q-Learning
 
 after actor selected a suitable action, critic use **[ s, s_ ]** to compute **[ v, v_ ]** by Neural Network. then using this formula:
-$$
-td_{error}=r + \gamma v_{-}-v
-$$
+
+![](IMG/4.gif)
+
 single update the actor network by [ **td, s, action** ]
 ## Deep Deterministic Policy Gradient
 
@@ -61,9 +59,7 @@ PG -> DPG -> DDPG
 
 ### DPG [a new function]
 
-$$
-\alpha_t = \mu(s_t|\theta^\mu)
-$$
+![](IMG/5.gif)
 
 The Function u is **the most optimal policy**[ combine Q-learning or Gradient Q-learning ],  It is no longer a random strategy that requires sampling.[ PG is random sampling ]
 
@@ -79,9 +75,7 @@ maybe it mean that [ **Deep + Deterministic + Policy Gradient** ]
 
 #### Actor
 
-$$
-\nabla_{\theta\mu}J \approx \frac{1}{N}\sum_{i}\nabla_{\alpha}Q(s,\alpha|\theta^{Q})|_{s=s_i,\alpha=\mu(s_i)}\nabla_{\theta^{\mu}\mu}(s|\theta^\mu)|s_i
-$$
+![](IMG/6.gif)
 
 **gradient[Q]** is come from **Critic**, it tall Actor How to move and get the more reward. Critic get this value by **s**(<u>the last observation</u>) and **action**(<u>which was compute from neural network</u>)
 
@@ -89,30 +83,23 @@ $$
 
 #### Critics
 
-$$
-\gamma_i = r_i+\gamma Q'(s_{i+1}, \mu'(s_{i+1}|\theta^{\mu'})| \theta^{Q'})
-$$
+![](IMG/7.gif)
 
 According to **s_,** using Actor select **action**( **Actor_Target** ), [ **Directly output** the action by Neural NetWork.
 
 Update critic by **minimizing the loss**: 
-$$
-L =\frac{1}{N}\sum_{i}(y_i-Q(s_i,\alpha_i|\theta^Q))^2
-$$
+
+![](IMG/8.gif)
 
 #### Outline
 
 ##### A certain action policy u : every action from [ Actor ]
 
-$$
-a_t=\mu(s_t)
-$$
+![](IMG/9.gif)
 
 ##### Policy network : simulate function u with convolution neural network. the name of parameter is  [ Actor ]
 
-$$
-\theta^{\mu}
-$$
+![](IMG/10.gif)
 
 ##### Behavior policy :  we should focus on Exploration and **Exploit**   [ Actor ]
 
@@ -131,20 +118,20 @@ DDPG use [Uhlenbeck-Ornstein random process](https://en.wikipedia.org/wiki/Ornst
 we use **the certain action policy** to test , not behavior policy .[ because the aim of behavior policy is find the other probability optimal policy ]
 
 Q-function : In the state St , take action (at) under the certain action policy, then get the expect value Rt, explain it by Bellman formula :
-$$
-Q^\mu(s_t,a_t)=E[r(s_t,a_t)+\gamma Q^\mu(s_{t+1},\mu_{t+1})]
-$$
+
+
+
+![](IMG/11.gif)
+
 it is hard to recursion calculate Q, so we use a nerual network to simulate this formula.[Q-Network]
-$$
-\theta^Q
-$$
+
+![](IMG/12.gif)
+
 this method like DQN;
 
 ##### J function measure this policy performance [ performance objective ]
 
-$$
-J_\beta(\mu)=\int _S\rho^\beta(s)Q^\mu(s,\mu(s)){\rm d}s= E_{s \to \rho^\beta}[Q^\mu(s,\mu(s))]
-$$
+![](IMG/13.gif)
 
 s is the state，This state is base on agent behavior policy : the distribution function is *ρ^β*
 
@@ -153,40 +140,24 @@ s is the state，This state is base on agent behavior policy : the distribution 
 Train aim：maximum [ *J_β*(*μ*) ] and minimize [ *Q* ]
 
 the most optimal action policy : maximum J_β(μ):
-$$
-\mu = argmax_\mu J(\mu)
-$$
+
+![](IMG/14.gif)
+
 ![DDPG_code](IMG/DDPG_CODE.jpeg)
 
 #### In the code:DDPG divide into 2 network[policy{actor} and Q{critic}]
 
-$$
-policy-Net\begin{cases}
-eval:\mu(s|\theta^\mu) \\
-\\
-target:\mu'(s|\theta^{\mu'})\\
-\end{cases}
-$$
+![](IMG/15.gif)
 
-$$
-Q-Net\begin{cases}
-eval:Q(s|\theta^Q) \\
-\\
-target:Q'(s|\theta^{Q'})\\
-\end{cases}
-$$
+
+
+![](IMG/16.gif)
 
 each round(min-batch) update eval-net then update target-net using SGA\SGD
 
 update target-net is runing average algorithm:
-$$
-soft-update:\begin{cases}
-\theta^{Q'}=\tau\theta^Q+(1-\tau)\theta^{Q'}\\
-\\
-\theta^{\mu'}=\tau\theta^\mu+(1-\tau)\theta^{\mu'}\\
-\end{cases}
-$$
 
+![](IMG/17.gif)
 
 # Classification
 
