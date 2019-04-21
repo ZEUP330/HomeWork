@@ -25,6 +25,7 @@ public:
     long get_block_len(); // get the length of block chain
     void add_block();  // package the AddBlock
     bool search_block(int index);  // search block by index
+    bool check_info();  // check information such as: if the previous hash_value equal to pre_hash
 };
 
 

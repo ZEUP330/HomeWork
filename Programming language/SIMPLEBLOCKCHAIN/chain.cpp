@@ -47,7 +47,7 @@ void Chain::add_block()
     prehash = it[-1].Hash;
     Block t(index, prehash);
     t.Input();
-    cout<<index<<endl;
+//    cout<<index<<endl;
     AddBlock(t);
 }
 
@@ -77,4 +77,18 @@ bool Chain::search_block(int index)
         }
     }
 }
-
+bool Chain::check_info()
+{
+    int i = 1, pre = 0;
+    while (i<BlockChainTmp.size())
+    {
+        pre = (i == 0 ? 0 : i-1);
+        if(BlockChainTmp[i].PreHash != BlockChainTmp[pre].Hash ||
+                        BlockChainTmp[pre].Index != BlockChainTmp[i].Index-1)
+        {
+            return false;
+        }
+        i+=1;
+    }
+    return true;
+}

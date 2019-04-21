@@ -82,3 +82,8 @@ bool non_structure_blockchain::Search(int index)
     }
     return false;
 }
+
+long non_structure_blockchain::Length()
+{
+    return max;
+}

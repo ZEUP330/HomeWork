@@ -23,6 +23,7 @@ public:
     void AddBlock(string data);
     void Output();
     bool Search(int index);
+    long Length();
 };
 
 

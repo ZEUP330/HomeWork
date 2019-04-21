@@ -4,31 +4,87 @@
 using namespace std;
 #include "picosha2.h"
 #include "non_structure_blockchain.h"
-// 从string生成
 //int main()
 //{
 //    Chain BlockChain;
-//    int flag = 5;
-//    while (flag--) //EOF结束
+//    while(true)
 //    {
-//        BlockChain.add_block();
+//        string command;
+//        cout<<"Start to operate chain."<<endl
+//                <<"q:Quit"<<endl<<"i:Insert"<<endl
+//                <<"s:Search"<<endl<<"c:Check"<<endl
+//                <<"l:Len"<<endl<<"o:Output all information"<<endl
+//                <<"please input command:";
+//        cin>>command;
+//        if(command == "q")
+//            break;
+//        else if(command == "i")
+//            BlockChain.add_block();
+//        else if(command == "s")
+//        {
+//            int index;
+//            cin >> index;
+//            BlockChain.search_block(index);
+//        }
+//        else if(command == "c")
+//        {
+//            if(BlockChain.check_info())
+//            {
+//                cout<<"Correction"<<endl;
+//            }
+//            else{
+//                cout<<"some info wrong"<<endl;
+//            }
+//        }
+//        else if(command == "l")
+//            cout<<"the number of block in this chain :"<<BlockChain.get_block_len()<<endl;
+//        else if(command == "o")
+//            BlockChain.Output();
+//        else
+//            cout<<"Please Input correct command!!!"<<endl;
+//        cout<<"-------------------------------------"<<endl;
 //    }
-////    BlockChain.Output();  // output all information
-//    cout<<"the number of block in this chain :"<<BlockChain.get_block_len()<<endl;
-//    BlockChain.add_block();
-//    BlockChain.search_block(100);
+//
 //}
+
+
+
 int main()
 {
     non_structure_blockchain non_structure;
     string a;
     int flag = 5;
-    while(flag--)
+    while(true)
     {
-        cout<<"please input the data:";
-        cin>>a;
-        non_structure.AddBlock(a);
+        string command;
+        cout<<"Start to operate chain."<<endl
+                <<"q:Quit"<<endl<<"i:Insert"<<endl
+                <<"s:Search"<<endl<<"c:Check"<<endl
+                <<"l:Len"<<endl<<"o:Output all information"<<endl
+                <<"please input command:";
+        cin>>command;
+        if(command == "q")
+            break;
+        else if(command == "i")
+        {
+            cout<<"please input the data:";
+            cin>>a;
+            non_structure.AddBlock(a);
+        }
+        else if(command == "s")
+        {
+            int index;
+            cin >> index;
+            cout<<"search:"<<non_structure.Search(index);
+        }
+        else if(command == "c")
+            cout<<"Correction"<<endl;
+        else if(command == "l")
+            cout<<"the number of block in this chain :"<<non_structure.Length()<<endl;
+        else if(command == "o")
+            non_structure.Output();
+        else
+            cout<<"Please Input correct command!!!"<<endl;
+        cout<<"-------------------------------------"<<endl;
     }
-    non_structure.Output();
-    cout<<"search:"<<non_structure.Search(1);
 }
