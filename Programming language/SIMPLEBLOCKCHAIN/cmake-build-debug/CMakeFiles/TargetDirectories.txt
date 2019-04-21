@@ -1,0 +1,3 @@
+/home/ljt/Documents/HomeWork/Programming language/SIMPLEBLOCKCHAIN/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/ljt/Documents/HomeWork/Programming language/SIMPLEBLOCKCHAIN/cmake-build-debug/CMakeFiles/SIMPLEBLOCKCHAIN.dir
+/home/ljt/Documents/HomeWork/Programming language/SIMPLEBLOCKCHAIN/cmake-build-debug/CMakeFiles/edit_cache.dir

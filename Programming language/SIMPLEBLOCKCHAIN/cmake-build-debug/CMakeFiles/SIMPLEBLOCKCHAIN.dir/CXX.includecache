@@ -1,0 +1,52 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ljt/Documents/HomeWork/Programming language/SIMPLEBLOCKCHAIN/block.h
+iostream
+-
+
+/home/ljt/Documents/HomeWork/Programming language/SIMPLEBLOCKCHAIN/chain.h
+iostream
+-
+block.h
+/home/ljt/Documents/HomeWork/Programming language/SIMPLEBLOCKCHAIN/block.h
+string
+-
+vector
+-
+
+/home/ljt/Documents/HomeWork/Programming language/SIMPLEBLOCKCHAIN/main.cpp
+iostream
+-
+vector
+-
+chain.h
+/home/ljt/Documents/HomeWork/Programming language/SIMPLEBLOCKCHAIN/chain.h
+picosha2.h
+/home/ljt/Documents/HomeWork/Programming language/SIMPLEBLOCKCHAIN/picosha2.h
+non_structure_blockchain.h
+/home/ljt/Documents/HomeWork/Programming language/SIMPLEBLOCKCHAIN/non_structure_blockchain.h
+
+/home/ljt/Documents/HomeWork/Programming language/SIMPLEBLOCKCHAIN/non_structure_blockchain.h
+iostream
+-
+time.h
+-
+
+/home/ljt/Documents/HomeWork/Programming language/SIMPLEBLOCKCHAIN/picosha2.h
+algorithm
+-
+cassert
+-
+iterator
+-
+sstream
+-
+vector
+-
+
