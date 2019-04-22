@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ljt/Documents/HomeWork/Programming language/BLOCKCHAIN/block.h
+iostream
+-
+
+/home/ljt/Documents/HomeWork/Programming language/BLOCKCHAIN/chain.h
+iostream
+-
+block.h
+/home/ljt/Documents/HomeWork/Programming language/BLOCKCHAIN/block.h
+string
+-
+vector
+-
+
+/home/ljt/Documents/HomeWork/Programming language/BLOCKCHAIN/main.cpp
+iostream
+-
+vector
+-
+chain.h
+/home/ljt/Documents/HomeWork/Programming language/BLOCKCHAIN/chain.h
+md5.h
+/home/ljt/Documents/HomeWork/Programming language/BLOCKCHAIN/md5.h
+
+/home/ljt/Documents/HomeWork/Programming language/BLOCKCHAIN/md5.h
+string
+-
+
