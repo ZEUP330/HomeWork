@@ -1,7 +1,7 @@
 # -*-  coding: utf-8  -*-
 import numpy as np
 global N
-N = 4
+N = 8
 Solution = []
 
 
@@ -30,6 +30,7 @@ def isSafe(board, row, col):
 def solveNQUtil(board, col):
     if col >= N:
         Solution.append(board)
+        printSolution(board)
     else:
         for i in range(N):
             if isSafe(board, i, col):
@@ -41,7 +42,7 @@ def solveNQUtil(board, col):
 def solveNQ():
     board = np.zeros((N, N))
     solveNQUtil(board, 0)
-    print(len(Solution))
+    print N, "Queen solution: ", len(Solution)
 
 
 if __name__ == "__main__":

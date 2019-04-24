@@ -20,11 +20,6 @@ Chain::~Chain()
 
 }
 
-void Chain::AddBlock(Block t)
-{
-    BlockChainTmp.push_back(t);
-}
-
 void Chain::Output()
 {
     for (auto x : BlockChainTmp)
@@ -36,6 +31,11 @@ void Chain::Output()
              << "his Hash : " << x.Hash << endl
              << "his Dta : " << x.Data << endl;
     }
+}
+
+void Chain::AddBlock(Block t)
+{
+    BlockChainTmp.push_back(t);
 }
 
 void Chain::add_block()
@@ -60,7 +60,7 @@ bool Chain::search_block(int index)
 {
     for (auto x : BlockChainTmp)
     {
-        if(x.Index == index)
+        if( x.Index == index)
         {
             cout << "-------------------------------------------------------------\n"
                  << "There is the " << x.Index << " block : \n"
@@ -70,12 +70,9 @@ bool Chain::search_block(int index)
                  << "his Dta : " << x.Data << endl;
             return true;
         }
-        else
-        {
-            cout << "can't find this index block" << endl;
-            return false;
-        }
     }
+    cout << "can't find this index block" << endl;
+    return false;
 }
 bool Chain::check_info()
 {

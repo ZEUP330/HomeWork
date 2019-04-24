@@ -4,116 +4,112 @@
 	<Project>
 		<Option title="SIMPLEBLOCKCHAIN"/>
 		<Option makefile_is_custom="1"/>
-		<Option compiler="gcc"/>
+		<Option compiler="msvc8"/>
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/ljt/Documents/HomeWork/Programming language/SIMPLEBLOCKCHAIN/cmake-build-debug"/>
+				<Option working_dir="C:/Users/VCC/Desktop/operation system/Operation System/HomeWork/Programming language/SIMPLEBLOCKCHAIN/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j56 -f &quot;/home/ljt/Documents/HomeWork/Programming\ language/SIMPLEBLOCKCHAIN/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/ljt/Documents/HomeWork/Programming\ language/SIMPLEBLOCKCHAIN/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j56 -f &quot;/home/ljt/Documents/HomeWork/Programming\ language/SIMPLEBLOCKCHAIN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j56 -f &quot;/home/ljt/Documents/HomeWork/Programming\ language/SIMPLEBLOCKCHAIN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="rebuild_cache">
-				<Option working_dir="/home/ljt/Documents/HomeWork/Programming language/SIMPLEBLOCKCHAIN/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j56 -f &quot;/home/ljt/Documents/HomeWork/Programming\ language/SIMPLEBLOCKCHAIN/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/ljt/Documents/HomeWork/Programming\ language/SIMPLEBLOCKCHAIN/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j56 -f &quot;/home/ljt/Documents/HomeWork/Programming\ language/SIMPLEBLOCKCHAIN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j56 -f &quot;/home/ljt/Documents/HomeWork/Programming\ language/SIMPLEBLOCKCHAIN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\VCC\Desktop\operation system\Operation System\HomeWork\Programming language\SIMPLEBLOCKCHAIN\cmake-build-debug\Makefile&quot; VERBOSE=1 all"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\VCC\Desktop\operation system\Operation System\HomeWork\Programming language\SIMPLEBLOCKCHAIN\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\VCC\Desktop\operation system\Operation System\HomeWork\Programming language\SIMPLEBLOCKCHAIN\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\VCC\Desktop\operation system\Operation System\HomeWork\Programming language\SIMPLEBLOCKCHAIN\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="SIMPLEBLOCKCHAIN">
-				<Option output="/home/ljt/Documents/HomeWork/Programming language/SIMPLEBLOCKCHAIN/cmake-build-debug/SIMPLEBLOCKCHAIN" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/ljt/Documents/HomeWork/Programming language/SIMPLEBLOCKCHAIN/cmake-build-debug"/>
+				<Option output="C:/Users/VCC/Desktop/operation system/Operation System/HomeWork/Programming language/SIMPLEBLOCKCHAIN/cmake-build-debug/SIMPLEBLOCKCHAIN.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/VCC/Desktop/operation system/Operation System/HomeWork/Programming language/SIMPLEBLOCKCHAIN/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
-				<Option compiler="gcc"/>
+				<Option compiler="msvc8"/>
 				<Compiler>
-					<Add directory="/opt/ros/indigo/include"/>
-					<Add directory="/usr/include/c++/4.8"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/4.8"/>
-					<Add directory="/usr/include/c++/4.8/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j56 -f &quot;/home/ljt/Documents/HomeWork/Programming\ language/SIMPLEBLOCKCHAIN/cmake-build-debug/Makefile&quot;  VERBOSE=1 SIMPLEBLOCKCHAIN"/>
-					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/ljt/Documents/HomeWork/Programming\ language/SIMPLEBLOCKCHAIN/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j56 -f &quot;/home/ljt/Documents/HomeWork/Programming\ language/SIMPLEBLOCKCHAIN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j56 -f &quot;/home/ljt/Documents/HomeWork/Programming\ language/SIMPLEBLOCKCHAIN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\VCC\Desktop\operation system\Operation System\HomeWork\Programming language\SIMPLEBLOCKCHAIN\cmake-build-debug\Makefile&quot; VERBOSE=1 SIMPLEBLOCKCHAIN"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\VCC\Desktop\operation system\Operation System\HomeWork\Programming language\SIMPLEBLOCKCHAIN\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\VCC\Desktop\operation system\Operation System\HomeWork\Programming language\SIMPLEBLOCKCHAIN\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\VCC\Desktop\operation system\Operation System\HomeWork\Programming language\SIMPLEBLOCKCHAIN\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="SIMPLEBLOCKCHAIN/fast">
-				<Option output="/home/ljt/Documents/HomeWork/Programming language/SIMPLEBLOCKCHAIN/cmake-build-debug/SIMPLEBLOCKCHAIN" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/ljt/Documents/HomeWork/Programming language/SIMPLEBLOCKCHAIN/cmake-build-debug"/>
+				<Option output="C:/Users/VCC/Desktop/operation system/Operation System/HomeWork/Programming language/SIMPLEBLOCKCHAIN/cmake-build-debug/SIMPLEBLOCKCHAIN.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/VCC/Desktop/operation system/Operation System/HomeWork/Programming language/SIMPLEBLOCKCHAIN/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
-				<Option compiler="gcc"/>
+				<Option compiler="msvc8"/>
 				<Compiler>
-					<Add directory="/opt/ros/indigo/include"/>
-					<Add directory="/usr/include/c++/4.8"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/4.8"/>
-					<Add directory="/usr/include/c++/4.8/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j56 -f &quot;/home/ljt/Documents/HomeWork/Programming\ language/SIMPLEBLOCKCHAIN/cmake-build-debug/Makefile&quot;  VERBOSE=1 SIMPLEBLOCKCHAIN/fast"/>
-					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/ljt/Documents/HomeWork/Programming\ language/SIMPLEBLOCKCHAIN/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j56 -f &quot;/home/ljt/Documents/HomeWork/Programming\ language/SIMPLEBLOCKCHAIN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j56 -f &quot;/home/ljt/Documents/HomeWork/Programming\ language/SIMPLEBLOCKCHAIN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\VCC\Desktop\operation system\Operation System\HomeWork\Programming language\SIMPLEBLOCKCHAIN\cmake-build-debug\Makefile&quot; VERBOSE=1 SIMPLEBLOCKCHAIN/fast"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\VCC\Desktop\operation system\Operation System\HomeWork\Programming language\SIMPLEBLOCKCHAIN\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\VCC\Desktop\operation system\Operation System\HomeWork\Programming language\SIMPLEBLOCKCHAIN\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\VCC\Desktop\operation system\Operation System\HomeWork\Programming language\SIMPLEBLOCKCHAIN\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/ljt/Documents/HomeWork/Programming language/SIMPLEBLOCKCHAIN/cmake-build-debug"/>
+				<Option working_dir="C:/Users/VCC/Desktop/operation system/Operation System/HomeWork/Programming language/SIMPLEBLOCKCHAIN/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j56 -f &quot;/home/ljt/Documents/HomeWork/Programming\ language/SIMPLEBLOCKCHAIN/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/ljt/Documents/HomeWork/Programming\ language/SIMPLEBLOCKCHAIN/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j56 -f &quot;/home/ljt/Documents/HomeWork/Programming\ language/SIMPLEBLOCKCHAIN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j56 -f &quot;/home/ljt/Documents/HomeWork/Programming\ language/SIMPLEBLOCKCHAIN/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\VCC\Desktop\operation system\Operation System\HomeWork\Programming language\SIMPLEBLOCKCHAIN\cmake-build-debug\Makefile&quot; VERBOSE=1 edit_cache"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\VCC\Desktop\operation system\Operation System\HomeWork\Programming language\SIMPLEBLOCKCHAIN\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\VCC\Desktop\operation system\Operation System\HomeWork\Programming language\SIMPLEBLOCKCHAIN\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\VCC\Desktop\operation system\Operation System\HomeWork\Programming language\SIMPLEBLOCKCHAIN\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/VCC/Desktop/operation system/Operation System/HomeWork/Programming language/SIMPLEBLOCKCHAIN/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\VCC\Desktop\operation system\Operation System\HomeWork\Programming language\SIMPLEBLOCKCHAIN\cmake-build-debug\Makefile&quot; VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\VCC\Desktop\operation system\Operation System\HomeWork\Programming language\SIMPLEBLOCKCHAIN\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\VCC\Desktop\operation system\Operation System\HomeWork\Programming language\SIMPLEBLOCKCHAIN\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\VCC\Desktop\operation system\Operation System\HomeWork\Programming language\SIMPLEBLOCKCHAIN\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/ljt/Documents/HomeWork/Programming language/SIMPLEBLOCKCHAIN/block.cpp">
+		<Unit filename="C:/Users/VCC/Desktop/operation system/Operation System/HomeWork/Programming language/SIMPLEBLOCKCHAIN/block.cpp">
 			<Option target="SIMPLEBLOCKCHAIN"/>
 		</Unit>
-		<Unit filename="/home/ljt/Documents/HomeWork/Programming language/SIMPLEBLOCKCHAIN/block.h">
+		<Unit filename="C:/Users/VCC/Desktop/operation system/Operation System/HomeWork/Programming language/SIMPLEBLOCKCHAIN/block.h">
 			<Option target="SIMPLEBLOCKCHAIN"/>
 		</Unit>
-		<Unit filename="/home/ljt/Documents/HomeWork/Programming language/SIMPLEBLOCKCHAIN/chain.cpp">
+		<Unit filename="C:/Users/VCC/Desktop/operation system/Operation System/HomeWork/Programming language/SIMPLEBLOCKCHAIN/chain.cpp">
 			<Option target="SIMPLEBLOCKCHAIN"/>
 		</Unit>
-		<Unit filename="/home/ljt/Documents/HomeWork/Programming language/SIMPLEBLOCKCHAIN/chain.h">
+		<Unit filename="C:/Users/VCC/Desktop/operation system/Operation System/HomeWork/Programming language/SIMPLEBLOCKCHAIN/chain.h">
 			<Option target="SIMPLEBLOCKCHAIN"/>
 		</Unit>
-		<Unit filename="/home/ljt/Documents/HomeWork/Programming language/SIMPLEBLOCKCHAIN/main.cpp">
+		<Unit filename="C:/Users/VCC/Desktop/operation system/Operation System/HomeWork/Programming language/SIMPLEBLOCKCHAIN/main.cpp">
 			<Option target="SIMPLEBLOCKCHAIN"/>
 		</Unit>
-		<Unit filename="/home/ljt/Documents/HomeWork/Programming language/SIMPLEBLOCKCHAIN/non_structure_blockchain.cpp">
+		<Unit filename="C:/Users/VCC/Desktop/operation system/Operation System/HomeWork/Programming language/SIMPLEBLOCKCHAIN/non_structure_blockchain.cpp">
 			<Option target="SIMPLEBLOCKCHAIN"/>
 		</Unit>
-		<Unit filename="/home/ljt/Documents/HomeWork/Programming language/SIMPLEBLOCKCHAIN/non_structure_blockchain.h">
+		<Unit filename="C:/Users/VCC/Desktop/operation system/Operation System/HomeWork/Programming language/SIMPLEBLOCKCHAIN/non_structure_blockchain.h">
 			<Option target="SIMPLEBLOCKCHAIN"/>
 		</Unit>
-		<Unit filename="/home/ljt/Documents/HomeWork/Programming language/SIMPLEBLOCKCHAIN/picosha2.h">
+		<Unit filename="C:/Users/VCC/Desktop/operation system/Operation System/HomeWork/Programming language/SIMPLEBLOCKCHAIN/picosha2.h">
 			<Option target="SIMPLEBLOCKCHAIN"/>
 		</Unit>
-		<Unit filename="/home/ljt/Documents/HomeWork/Programming language/SIMPLEBLOCKCHAIN/test_picosha256.cpp">
+		<Unit filename="C:/Users/VCC/Desktop/operation system/Operation System/HomeWork/Programming language/SIMPLEBLOCKCHAIN/test_picosha256.cpp">
 			<Option target="SIMPLEBLOCKCHAIN"/>
 		</Unit>
-		<Unit filename="/home/ljt/Documents/HomeWork/Programming language/SIMPLEBLOCKCHAIN/CMakeLists.txt">
+		<Unit filename="C:/Users/VCC/Desktop/operation system/Operation System/HomeWork/Programming language/SIMPLEBLOCKCHAIN/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

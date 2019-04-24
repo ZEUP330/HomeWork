@@ -11,13 +11,11 @@
 #include <string>
 #include <vector>
 using namespace std;
-
 class Chain
 {
 private:
     void AddBlock(Block t); //添加新区快
     vector<Block> BlockChainTmp;
-
 public:
     Chain(); //添加创世区块
     ~Chain();

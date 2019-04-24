@@ -7,14 +7,14 @@ using namespace std;
 //int main()
 //{
 //    Chain BlockChain;
+//    cout<<"Start to operate chain."<<endl
+//        <<"q:Quit"<<endl<<"i:Insert"<<endl
+//        <<"s:Search"<<endl<<"c:Check"<<endl
+//        <<"l:Len"<<endl<<"o:Output all information"<<endl;
 //    while(true)
 //    {
+//        cout<<"please input command:";
 //        string command;
-//        cout<<"Start to operate chain."<<endl
-//                <<"q:Quit"<<endl<<"i:Insert"<<endl
-//                <<"s:Search"<<endl<<"c:Check"<<endl
-//                <<"l:Len"<<endl<<"o:Output all information"<<endl
-//                <<"please input command:";
 //        cin>>command;
 //        if(command == "q")
 //            break;
@@ -23,6 +23,7 @@ using namespace std;
 //        else if(command == "s")
 //        {
 //            int index;
+//            cout<<"Please input Index:";
 //            cin >> index;
 //            BlockChain.search_block(index);
 //        }
@@ -54,14 +55,14 @@ int main()
     non_structure_blockchain non_structure;
     string a;
     int flag = 5;
+    cout<<"Start to operate chain."<<endl
+            <<"q:Quit"<<endl<<"i:Insert"<<endl
+            <<"s:Search"<<endl<<"c:Check"<<endl
+            <<"l:Len"<<endl<<"o:Output all information"<<endl;
     while(true)
     {
+        cout<<"please input command:";
         string command;
-        cout<<"Start to operate chain."<<endl
-                <<"q:Quit"<<endl<<"i:Insert"<<endl
-                <<"s:Search"<<endl<<"c:Check"<<endl
-                <<"l:Len"<<endl<<"o:Output all information"<<endl
-                <<"please input command:";
         cin>>command;
         if(command == "q")
             break;
@@ -74,6 +75,7 @@ int main()
         else if(command == "s")
         {
             int index;
+            cout<<"please input the Index:";
             cin >> index;
             cout<<"search:"<<non_structure.Search(index);
         }
