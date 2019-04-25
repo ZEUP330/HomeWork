@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 #TargetFrameworkVersion=v4.0:PlatformToolSet=v140:EnableManagedIncrementalBuild=false:VCToolArchitecture=Native32Bit:WindowsTargetPlatformVersion=8.1
 Debug|Win32|C:\Users\VCC\Desktop\KinectProject\BackgroundRemovalBasics-D2D\|
+=======
+#TargetFrameworkVersion=v4.0:PlatformToolSet=v140:EnableManagedIncrementalBuild=false:VCToolArchitecture=Native32Bit:WindowsTargetPlatformVersion=8.1
+Debug|Win32|C:\Users\VCC\Desktop\KinectProject\BackgroundRemovalBasics-D2D\|
+>>>>>>> a9572a830299e19e918c0913dc96dbca1be28c70

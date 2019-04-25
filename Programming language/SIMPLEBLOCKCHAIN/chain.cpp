@@ -20,6 +20,14 @@ Chain::~Chain()
 
 }
 
+<<<<<<< HEAD
+=======
+void Chain::AddBlock(Block t)
+{
+    BlockChainTmp.push_back(t);
+}
+
+>>>>>>> a9572a830299e19e918c0913dc96dbca1be28c70
 void Chain::Output()
 {
     for (auto x : BlockChainTmp)
@@ -33,11 +41,14 @@ void Chain::Output()
     }
 }
 
+<<<<<<< HEAD
 void Chain::AddBlock(Block t)
 {
     BlockChainTmp.push_back(t);
 }
 
+=======
+>>>>>>> a9572a830299e19e918c0913dc96dbca1be28c70
 void Chain::add_block()
 {
     int index;
@@ -60,7 +71,11 @@ bool Chain::search_block(int index)
 {
     for (auto x : BlockChainTmp)
     {
+<<<<<<< HEAD
         if( x.Index == index)
+=======
+        if(x.Index == index)
+>>>>>>> a9572a830299e19e918c0913dc96dbca1be28c70
         {
             cout << "-------------------------------------------------------------\n"
                  << "There is the " << x.Index << " block : \n"
@@ -70,9 +85,18 @@ bool Chain::search_block(int index)
                  << "his Dta : " << x.Data << endl;
             return true;
         }
+<<<<<<< HEAD
     }
     cout << "can't find this index block" << endl;
     return false;
+=======
+        else
+        {
+            cout << "can't find this index block" << endl;
+            return false;
+        }
+    }
+>>>>>>> a9572a830299e19e918c0913dc96dbca1be28c70
 }
 bool Chain::check_info()
 {

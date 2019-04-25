@@ -6,6 +6,7 @@
 
 #IncludeRegexTransform: 
 
+<<<<<<< HEAD
 C:/Users/VCC/Desktop/operation system/Operation System/HomeWork/Programming language/SIMPLEBLOCKCHAIN/block.h
 iostream
 -
@@ -15,17 +16,33 @@ iostream
 -
 block.h
 C:/Users/VCC/Desktop/operation system/Operation System/HomeWork/Programming language/SIMPLEBLOCKCHAIN/block.h
+=======
+/home/ljt/Documents/HomeWork/Programming language/SIMPLEBLOCKCHAIN/block.h
+iostream
+-
+
+/home/ljt/Documents/HomeWork/Programming language/SIMPLEBLOCKCHAIN/chain.h
+iostream
+-
+block.h
+/home/ljt/Documents/HomeWork/Programming language/SIMPLEBLOCKCHAIN/block.h
+>>>>>>> a9572a830299e19e918c0913dc96dbca1be28c70
 string
 -
 vector
 -
 
+<<<<<<< HEAD
 C:/Users/VCC/Desktop/operation system/Operation System/HomeWork/Programming language/SIMPLEBLOCKCHAIN/main.cpp
+=======
+/home/ljt/Documents/HomeWork/Programming language/SIMPLEBLOCKCHAIN/main.cpp
+>>>>>>> a9572a830299e19e918c0913dc96dbca1be28c70
 iostream
 -
 vector
 -
 chain.h
+<<<<<<< HEAD
 C:/Users/VCC/Desktop/operation system/Operation System/HomeWork/Programming language/SIMPLEBLOCKCHAIN/chain.h
 picosha2.h
 C:/Users/VCC/Desktop/operation system/Operation System/HomeWork/Programming language/SIMPLEBLOCKCHAIN/picosha2.h
@@ -33,12 +50,25 @@ non_structure_blockchain.h
 C:/Users/VCC/Desktop/operation system/Operation System/HomeWork/Programming language/SIMPLEBLOCKCHAIN/non_structure_blockchain.h
 
 C:/Users/VCC/Desktop/operation system/Operation System/HomeWork/Programming language/SIMPLEBLOCKCHAIN/non_structure_blockchain.h
+=======
+/home/ljt/Documents/HomeWork/Programming language/SIMPLEBLOCKCHAIN/chain.h
+picosha2.h
+/home/ljt/Documents/HomeWork/Programming language/SIMPLEBLOCKCHAIN/picosha2.h
+non_structure_blockchain.h
+/home/ljt/Documents/HomeWork/Programming language/SIMPLEBLOCKCHAIN/non_structure_blockchain.h
+
+/home/ljt/Documents/HomeWork/Programming language/SIMPLEBLOCKCHAIN/non_structure_blockchain.h
+>>>>>>> a9572a830299e19e918c0913dc96dbca1be28c70
 iostream
 -
 time.h
 -
 
+<<<<<<< HEAD
 C:/Users/VCC/Desktop/operation system/Operation System/HomeWork/Programming language/SIMPLEBLOCKCHAIN/picosha2.h
+=======
+/home/ljt/Documents/HomeWork/Programming language/SIMPLEBLOCKCHAIN/picosha2.h
+>>>>>>> a9572a830299e19e918c0913dc96dbca1be28c70
 algorithm
 -
 cassert

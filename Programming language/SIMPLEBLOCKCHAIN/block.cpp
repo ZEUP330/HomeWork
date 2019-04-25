@@ -33,7 +33,11 @@ string Block::GetHash()
 void Block::Input()
 {
     string str;
+<<<<<<< HEAD
     cout << "Please input Data: " ;
+=======
+    cout << "输入数据 ： " ;
+>>>>>>> a9572a830299e19e918c0913dc96dbca1be28c70
     cin >> str;
     Data = str;
 }

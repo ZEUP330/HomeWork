@@ -1,15 +1,26 @@
 # -*-  coding: utf-8  -*-
 import numpy as np
 global N  # 皇后个数
+<<<<<<< HEAD
 global SUM  # 当前已找到的可行方案数
 N = 6
+=======
+# global x  # 当前解  list类型不需要声明为全局变量！
+global SUM  # 当前已找到的可行方案数
+N = 4
+# x = [0 for i in range(N)]
+>>>>>>> a9572a830299e19e918c0913dc96dbca1be28c70
 SUM = 0
 
 
 def print_solution(x):
     for i in range(len(x)):
         tmp = np.zeros((1, N))[0]
+<<<<<<< HEAD
         tmp[int(x[i])] = 1
+=======
+        tmp[int(x[i])]=1
+>>>>>>> a9572a830299e19e918c0913dc96dbca1be28c70
         print(tmp)
     print "\n"
 

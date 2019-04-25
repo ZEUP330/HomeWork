@@ -7,6 +7,7 @@ using namespace std;
 //int main()
 //{
 //    Chain BlockChain;
+<<<<<<< HEAD
 //    cout<<"Start to operate chain."<<endl
 //        <<"q:Quit"<<endl<<"i:Insert"<<endl
 //        <<"s:Search"<<endl<<"c:Check"<<endl
@@ -15,6 +16,16 @@ using namespace std;
 //    {
 //        cout<<"please input command:";
 //        string command;
+=======
+//    while(true)
+//    {
+//        string command;
+//        cout<<"Start to operate chain."<<endl
+//                <<"q:Quit"<<endl<<"i:Insert"<<endl
+//                <<"s:Search"<<endl<<"c:Check"<<endl
+//                <<"l:Len"<<endl<<"o:Output all information"<<endl
+//                <<"please input command:";
+>>>>>>> a9572a830299e19e918c0913dc96dbca1be28c70
 //        cin>>command;
 //        if(command == "q")
 //            break;
@@ -23,7 +34,10 @@ using namespace std;
 //        else if(command == "s")
 //        {
 //            int index;
+<<<<<<< HEAD
 //            cout<<"Please input Index:";
+=======
+>>>>>>> a9572a830299e19e918c0913dc96dbca1be28c70
 //            cin >> index;
 //            BlockChain.search_block(index);
 //        }
@@ -63,6 +77,14 @@ int main()
     {
         cout<<"please input command:";
         string command;
+    while(true)
+    {
+        string command;
+        cout<<"Start to operate chain."<<endl
+                <<"q:Quit"<<endl<<"i:Insert"<<endl
+                <<"s:Search"<<endl<<"c:Check"<<endl
+                <<"l:Len"<<endl<<"o:Output all information"<<endl
+                <<"please input command:";
         cin>>command;
         if(command == "q")
             break;

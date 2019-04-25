@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿  NuiSensorChooserUIPrivate.cpp
 c:\users\vcc\desktop\kinectproject\nuisensorchooser\nuisensorchooser.h(14): fatal error C1083: Cannot open include file: 'NuiApi.h': No such file or directory
   NuiSensorChooserUI.cpp
@@ -5,3 +6,12 @@ c:\users\vcc\desktop\kinectproject\nuisensorchooser\nuisensorchooser.h(14): fata
   NuiSensorChooser.cpp
 c:\users\vcc\desktop\kinectproject\nuisensorchooser\nuisensorchooser.h(14): fatal error C1083: Cannot open include file: 'NuiApi.h': No such file or directory
   Generating Code...
+=======
+﻿  NuiSensorChooserUIPrivate.cpp
+c:\users\vcc\desktop\kinectproject\nuisensorchooser\nuisensorchooser.h(14): fatal error C1083: Cannot open include file: 'NuiApi.h': No such file or directory
+  NuiSensorChooserUI.cpp
+c:\users\vcc\desktop\kinectproject\nuisensorchooser\nuisensorchooser.h(14): fatal error C1083: Cannot open include file: 'NuiApi.h': No such file or directory
+  NuiSensorChooser.cpp
+c:\users\vcc\desktop\kinectproject\nuisensorchooser\nuisensorchooser.h(14): fatal error C1083: Cannot open include file: 'NuiApi.h': No such file or directory
+  Generating Code...
+>>>>>>> a9572a830299e19e918c0913dc96dbca1be28c70
