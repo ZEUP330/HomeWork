@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 ToolSet: 15.0 (local)@C:\Program Files (x86)\Microsoft Visual Studio\2017\Community
 Options: 
-=======
-ToolSet: 1.0 (local)Options: 
->>>>>>> a9572a830299e19e918c0913dc96dbca1be28c70
 
 Options:

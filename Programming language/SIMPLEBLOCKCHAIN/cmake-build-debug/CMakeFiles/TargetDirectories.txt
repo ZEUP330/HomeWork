@@ -1,9 +1,3 @@
-<<<<<<< HEAD
 C:/Users/VCC/Desktop/operation system/Operation System/HomeWork/Programming language/SIMPLEBLOCKCHAIN/cmake-build-debug/CMakeFiles/SIMPLEBLOCKCHAIN.dir
 C:/Users/VCC/Desktop/operation system/Operation System/HomeWork/Programming language/SIMPLEBLOCKCHAIN/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/VCC/Desktop/operation system/Operation System/HomeWork/Programming language/SIMPLEBLOCKCHAIN/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-=======
-/home/ljt/Documents/HomeWork/Programming language/SIMPLEBLOCKCHAIN/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/ljt/Documents/HomeWork/Programming language/SIMPLEBLOCKCHAIN/cmake-build-debug/CMakeFiles/SIMPLEBLOCKCHAIN.dir
-/home/ljt/Documents/HomeWork/Programming language/SIMPLEBLOCKCHAIN/cmake-build-debug/CMakeFiles/edit_cache.dir
->>>>>>> a9572a830299e19e918c0913dc96dbca1be28c70
